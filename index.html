@@ -15,13 +15,21 @@ Raising you to an altar of coal
 You say we live with newspaper colors
 You live in a world based on your truths
 An empire of lies
-You would say I seek to demean you
+</textPath>
+    </text>
+</svg>
+  <div index="fill2" height="100000"></div>
+  <svg width="100%" height="160px" viewBox="0 0 1098.72 89.55">
+    <path id="curve2" fill="transparent" d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19"></path>
+    <text width="100%" style="transform:translate3d(0,0,0);">
+        <textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve2" id="2">You would say I seek to demean you
 I would say to look for the line
 We all move on a line
 Some of us are closer to the end
 Yet now that we are on the line
 We lack the black and white
 We all move on a line of lies
+
 </textPath>
     </text>
 </svg>
@@ -36,6 +44,17 @@ const h = document.documentElement,
 document.addEventListener("scroll", e => {
   let percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
   textPath.setAttribute("startOffset", (-percent * 40) + 1200)
+});
+const textPath2 = document.getElementByID("2");
+
+const h2 = document.documentElement, 
+      b2 = document.body,
+      st2 = 'scrollTop',
+      sh2 = 'scrollHeight';
+
+document.addEventListener("scroll", e => {
+  let percent = (h2[st2]||b2[st2]) / ((h2[sh2]||b2[sh2]) - h2.clientHeight) * 100;
+  textPath2.setAttribute("startOffset", (-percent * 40) + 1200)
 });
 </script>
 </body>
